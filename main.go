@@ -19,7 +19,7 @@ func main() {
 		panic(err)
 	}
 
-	w := weather.GetWeather(*geolocationData, *format)
+	w, _ := weather.GetWeather(*geolocationData, *format)
 	fmt.Println(w)
 
 }
